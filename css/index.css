@@ -1,0 +1,230 @@
+.container {
+    width: 1210px;
+    margin: 0 auto;
+}
+h3 {
+    font-size: 14px;
+    margin-bottom: 35px;
+    height: 32px;
+    border-bottom: 1px dashed #8ccbfe;
+    text-align: center;
+}
+.title-wrap {
+    display: inline-block;
+    height: 34px;
+    margin-top: 15px;
+    padding: 0 5px;
+    color: #13a2ff;
+    background: #f8f8f8;
+    line-height: 34px;
+}
+.title-wrap i {
+    float: left;
+    width: 34px;
+    height: 34px;
+    background: url(//misc.360buyimg.com/channel/computer/1.0.0/widget/qiang/i/qiang.png) no-repeat;
+}
+.title-wrap .title {
+    float: left;
+    font-size: 26px;
+    margin: 0 5px 0 10px;
+}
+.title-wrap .slogan {
+    float: left;
+}
+.qiang-wrap {
+    width: 1920px;
+    height: 350px;
+    margin-left: -355px;
+}
+.qiang-list {
+    float: left;
+    width: 1020px;
+    height: 290px;
+    padding: 30px 5px;
+    margin-left: 345px;
+    overflow: hidden;
+    list-style: none;
+}
+.qiang-item {
+    position: relative;
+    float: left;
+    width: 192px;
+    height: 288px;
+    border: 1px solid #fff;
+    background: #fff;
+    margin: 0 5px;
+    text-align: center;
+}
+.qiang-item .p-img {
+    margin: 20px 0 30px;
+    overflow: hidden;
+}
+a {
+    /* color: #666; */
+    text-decoration: none;
+}
+.qiang-item .p-name {
+    display: inline-block;
+    height: 36px;
+    padding: 0 18px;
+    color: #333;
+    font-weight: 700;
+    overflow: hidden;
+}
+.qiang-item .p-price {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    color: #e4383b;
+}
+.qiang-item .mark {
+    display: none;
+    position: absolute;
+    color: #333;
+    font-size: 15px;
+}
+.qiang-item .mark.fore1 {
+    left: -6px;
+    top: -11px;
+}
+.qiang-item .mark.fore2 {
+    right: -6px;
+    top: -11px;
+}
+.qiang-item .mark.fore3 {
+    left: -6px;
+    bottom: -8px;
+}
+.qiang-item .mark.fore4 {
+    right: -6px;
+    bottom: -8px;
+}
+.quan {
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 290px;
+    margin-top: 30px;
+    background: url(//misc.360buyimg.com/channel/computer/1.0.0/widget/qiang/i/quan.png) no-repeat;
+    overflow: hidden;
+}
+.quan .quan-wrap {
+    height: 230px;
+}
+.quan .quan-info {
+    position: absolute;
+    display: block;
+    top: 91px;
+    left: 20px;
+    width: 150px;
+    height: 122px;
+}
+.quan .p-price {
+    margin-top: 23px;
+    margin-left: 50px;
+    font-size: 36px;
+    color: #e60f0d;
+    font-weight: 700;
+    line-height: 36px;
+    overflow: hidden;
+}
+.quan .p-name {
+    width: 136px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 27px auto;
+    color: #333;
+    font-weight: 700;
+    overflow: hidden;
+    text-align: center;
+}
+.quan .quan-more {
+    display: block;
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+.brand-2017030902 {
+    height: 331px;
+    overflow: hidden;
+}
+.brand-2017030902 .mt {
+    margin-top: 20px;
+    height: 50px;
+    line-height: 50px;
+}
+.brand-2017030902 .mt .title {
+    float: left;
+    margin: 0 15px 0 10px;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+}
+.brand-2017030902 .mt .sub-title {
+    float: left;
+    font-size: 15px;
+    color: #999;
+    font-weight: 700;
+}
+.m, .mb, .mc, .mt, .sm, .smb, .smc, .smt {
+    overflow: hidden;
+    zoom: 1;
+}
+.brand-list {
+    width: 1212px;
+    height: 262px;
+    margin-left: -2px;
+    margin-top: -1px;
+    background: #fff;
+}
+.brand-item {
+    float: left;
+    width: 202px;
+    height: 110px;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+}
+.brand-2017030902 .brand-link {
+    position: relative;
+    display: block;
+    border-left: 1px solid #eee;
+}
+img {
+    background: url(//misc.360buyimg.com/lib/skin/e/i/error-jd.gif) no-repeat 50% 50%;
+    border: 0;
+    vertical-align: middle;
+}
+.brand-2017030902 .p-info {
+    display: none;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 201px;
+    height: 130px;
+    background: rgba(19,162,255,.9);
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#E513A2FF, endcolorstr=#E513A2FF);
+    text-align: center;
+}
+.brand-2017030902 .p-title {
+    margin-top: 32px;
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+    font-weight: 700;
+    color: #eee;
+    overflow: hidden;
+}
+.brand-2017030902 .p-text {
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    font-size: 14px;
+    padding: 0 10px;
+    border-radius: 9px;
+    background: #fff;
+    color: #13a2ff;
+}
