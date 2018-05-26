@@ -1,0 +1,361 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>电脑海淘-今日推荐</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="css/index.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/jquery.luara.0.0.1.min.js"></script>
+</head>
+<style>
+    body {
+        background: #f0f0f0;
+    }
+</style>
+<body>
+<div class="width100" id="beforeLogin" style="height:25ox;background:#f0f0f0;display: block;">
+	<div class="width1200 center_yh font14 c_66" style="height:25px;line-height:25px;">
+    	<font class="left_yh">欢迎来到电脑海淘商城！</font>
+        <div class="right_yh" id="fast_jump">
+        	<a href="./login.html">登录</a>
+            <b></b>
+            <a href="./register.html">注册</a>
+        </div>
+    </div>
+</div>
+<div class="width100" id="afterLogin" style="height:25ox;background:#f0f0f0;display: none;">
+	<div class="width1200 center_yh font14 c_66" style="height:25px;line-height:25px;">
+    	<div class="left_yh" id="hello"></div>
+        <div class="right_yh" id="fast_jump">
+            <img src="/images/user.png" style="width: 18px;height: 18px;line-height: 25px;"><a href="./my.html" style="margin-top: -20px;">个人中心</a>
+        </div>
+    </div>
+</div>
+<div class="width100 hidden_yh" style="background-color: #f7f9f9;">
+	<div class="width1200 center_yh hidden_yh">
+    	<a href="#" class="block_yh left_yh" style="margin-top:0px;background-color: #f7f9f9"><img style="height: 100%;" src="images/logo.png"></a>
+        <div class="right_yh" style="height:28px;width:316px;border:2px solid #dd4545;margin-top:48px;">
+        	<form>
+                <input type="text" placeholder="关键词查询" class="searCh">
+                <input type="button" class="btnSearh" value="搜索">
+            </form>
+        </div>
+    </div>
+</div>
+<!--导航条-->
+<div class="width100" style="height:45px;background:#dd4545;margin-top:px;position:relative;z-index:100;">
+	<!--中间的部分-->	
+	<div class="width1200 center_yh relative_yh" style="height:45px;">
+    	<!--列表导航(downSlide就显示,否则就不显示)-->
+    	<div class="left_yh" style="width:230px;height:45px;" id="hiddenShow">
+        	<!--头部的图标-->
+        	<img src="images/cd.png" class="left_yh" style="margin-left:24px;">
+            <span class="block_yh left_yh fff" style="height:45px;line-height:44px;margin-left:10px;">阶段分类</span>
+            <!--下面的导航展开部分-->
+            <div class="downSlide">
+            	<!--一块-->
+            	<div class="n1Nav">
+                	<font>青少年</font>
+                    <img src="images/jt.png">
+                    <div class="n2Nav">
+                    	<div class="n3Nav">
+                        	<h3>笔记本</h3>
+                            <a href="#">笔记本1</a>
+                            <a href="#">笔记本2</a>
+                            <a href="#">笔记本3</a>
+                            <a href="#">笔记本4</a>
+                            <a href="#">笔记本5</a>
+                        </div>
+                        <div class="n3Nav">
+                        	<h3>台式机</h3>
+                            <a href="#">台式机1</a>
+                            <a href="#">台式机2</a>
+                            <a href="#">台式机3</a>
+                            <a href="#">台式机4</a>
+                            <a href="#">台式机5</a>
+                        </div>
+                        <div class="n3Nav">
+                        	<h3>平板</h3>
+                            <a href="#">平板1</a>
+                            <a href="#">平板2</a>
+                            <a href="#">平板3</a>
+                            <a href="#">平板4</a>
+                            <a href="#">平板5</a>
+                        </div>
+                    </div>
+                </div>
+                <!--一块-->
+                <div class="n1Nav">
+                	<font>成年人</font>
+                    <img src="images/jt.png">
+                    <div class="n2Nav">
+                        <div class="n3Nav">
+                            <h3>笔记本</h3>
+                            <a href="#">笔记本1</a>
+                            <a href="#">笔记本2</a>
+                            <a href="#">笔记本3</a>
+                            <a href="#">笔记本4</a>
+                            <a href="#">笔记本5</a>
+                        </div>
+                        <div class="n3Nav">
+                            <h3>台式机</h3>
+                            <a href="#">台式机1</a>
+                            <a href="#">台式机2</a>
+                            <a href="#">台式机3</a>
+                            <a href="#">台式机4</a>
+                            <a href="#">台式机5</a>
+                        </div>
+                        <div class="n3Nav">
+                            <h3>平板</h3>
+                            <a href="#">平板1</a>
+                            <a href="#">平板2</a>
+                            <a href="#">平板3</a>
+                            <a href="#">平板4</a>
+                            <a href="#">平板5</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--普通导航-->
+        <div class="left_yh font16" id="pageNav">
+            <a href="index.html">首页</a>
+            <a href="recommand.html">今日推荐</a>
+            <a href="main.html">对比专区</a>
+            <a href="hobbyShow.html">个性化</a>
+            <a href="#">商城社区</a>
+        </div>
+    </div>
+</div>
+<!-- 主体部分 -->
+<div class="container">
+    <h3>
+        <div class="title-wrap">
+            <i></i>
+            <span class="title">疯抢专区</span>
+            <span class="slogan">手慢无！</span>
+        </div>
+    </h3>
+    <div class="qiang-wrap" style="background: url(//img13.360buyimg.com/cms/jfs/t3211/178/8723914327/113276/b7f312bb/58c7c49eNd2145997.png) no-repeat">
+        <ul class="qiang-list" data-price-area="done">
+            <li class="qiang-item" clstag="channel|keycount|2437|qiang-3-0">
+                <div class="p-img">
+                    <a href="//item.jd.com/6736180.html" target="_blank" title="华为(HUAWEI) MateBook X Pro 13.9英寸超轻薄全面屏笔记本(i5-8250U 8G 256G 3K 指" data-mcinfo="2437,3,0,01751296-05488621-8600661974-6736180#1-0-2--0--#1-tb-#3-1739810#pc.cms.u,1#2#63c718f0f223068ba09cbe4b796447fe0cc1fd38-0-621037#1739810,1#2-63c718f0f223068ba09cbe4b796447fe0cc1fd38-0-621037-3">
+                        <img width="160" height="160" src="//img10.360buyimg.com/n2/jfs/t17956/336/1435876905/172633/8097dbea/5aca3e17Neec76e40.jpg!q90.jpg">
+                    </a>
+                </div>
+                <a href="//item.jd.com/6736180.html" target="_blank" title="华为(HUAWEI) MateBook X Pro 13.9英寸超轻薄全面屏笔记本(i5-8250U 8G 256G 3K 指" class="p-name">
+                    华为(HUAWEI) MateBook X Pro 13.9英寸超轻薄全面屏笔记本(i5-8250U 8G 256G 3K 指
+                </a>
+                <div class="p-price" data-price-id="6736180">¥7988.00</div>
+                <i class="mark fore1">+</i>
+                <i class="mark fore2">+</i>
+                <i class="mark fore3">+</i>
+                <i class="mark fore4">+</i>
+            </li>
+            <li class="qiang-item" clstag="channel|keycount|2437|qiang-3-1">
+                <div class="p-img">
+                    <a href="//item.jd.com/1195206.html" target="_blank" title="天章（TANGO）新绿天章A4 70g复印纸 500张/包 8包/箱" data-mcinfo="2437,3,1,01751296-05488621-8600667234-1195206#1-0-2--0--#1-tb-#3-1739810#pc.cms.u,1#2#63c718f0f223068ba09cbe4b796447fe0cc1fd38-0-621037#1739810,1#2-63c718f0f223068ba09cbe4b796447fe0cc1fd38-0-621037-3">
+                        <img width="160" height="160" src="//img11.360buyimg.com/n2/jfs/t232/294/2295208695/165691/a71c29a3/540ff491N261239a8.jpg!q90.jpg">
+                    </a>
+                </div>
+                <a href="//item.jd.com/1195206.html" target="_blank" title="天章（TANGO）新绿天章A4 70g复印纸 500张/包 8包/箱" class="p-name">
+                    天章（TANGO）新绿天章A4 70g复印纸 500张/包 8包/箱
+                </a>
+                <div class="p-price" data-price-id="1195206">¥183.00</div>
+                <i class="mark fore1">+</i>
+                <i class="mark fore2">+</i>
+                <i class="mark fore3">+</i>
+                <i class="mark fore4">+</i>
+            </li>
+            <li class="qiang-item" clstag="channel|keycount|2437|qiang-3-2">
+                <div class="p-img">
+                    <a href="//item.jd.com/1378292500.html" target="_blank" title="橙派 i7 8700K/GTX1080/华硕Z370/ 水冷游戏台式吃鸡电脑主机/DIY组装机" data-mcinfo="2437,3,2,01751296-05488621-8600670270-1378292500#1-0-2--0--#1-tb-#3-1739810#pc.cms.u,1#2#63c718f0f223068ba09cbe4b796447fe0cc1fd38-0-621037#1739810,1#2-63c718f0f223068ba09cbe4b796447fe0cc1fd38-0-621037-3">
+                        <img width="160" height="160" src="//img12.360buyimg.com/n2/jfs/t16669/145/1658985436/170612/44bddf72/5ad2be0fN70f927c6.jpg!q90.jpg">
+                    </a>
+                </div>
+                <a href="//item.jd.com/1378292500.html" target="_blank" title="橙派 i7 8700K/GTX1080/华硕Z370/ 水冷游戏台式吃鸡电脑主机/DIY组装机" class="p-name">
+                    橙派 i7 8700K/GTX1080/华硕Z370/ 水冷游戏台式吃鸡电脑主机/DIY组装机
+                </a>
+                <div class="p-price" data-price-id="1378292500">¥8999.00</div>
+                <i class="mark fore1">+</i>
+                <i class="mark fore2">+</i>
+                <i class="mark fore3">+</i>
+                <i class="mark fore4">+</i>
+            </li>
+            <li class="qiang-item" clstag="channel|keycount|2437|qiang-3-3">
+                <div class="p-img">
+                    <a href="//item.jd.com/7508547.html" target="_blank" title="联想（Lenovo）AIO 520 致美一体机台式电脑23.8英寸（I3-8100T 8G 1T+128G SSD 集显 三年" data-mcinfo="2437,3,3,01751296-05488621-8600665253-7508547#1-0-2--0--#1-tb-#3-1739810#pc.cms.u,1#2#63c718f0f223068ba09cbe4b796447fe0cc1fd38-0-621037#1739810,1#2-63c718f0f223068ba09cbe4b796447fe0cc1fd38-0-621037-3">
+                        <img width="160" height="160" src="//img13.360buyimg.com/n2/jfs/t19366/358/2455974884/306227/26995115/5af6df1fNb8784259.jpg!q90.jpg">
+                    </a>
+                </div>
+                <a href="//item.jd.com/7508547.html" target="_blank" title="联想（Lenovo）AIO 520 致美一体机台式电脑23.8英寸（I3-8100T 8G 1T+128G SSD 集显 三年" class="p-name">
+                    联想（Lenovo）AIO 520 致美一体机台式电脑23.8英寸（I3-8100T 8G 1T+128G SSD 集显 三年
+                </a>
+                <div class="p-price" data-price-id="7508547">¥4599.00</div>
+                <i class="mark fore1">+</i>
+                <i class="mark fore2">+</i>
+                <i class="mark fore3">+</i>
+                <i class="mark fore4">+</i>
+            </li>
+            <li class="qiang-item" clstag="channel|keycount|2437|qiang-3-4">
+                <div class="p-img">
+                    <a href="//item.jd.com/7219173.html" target="_blank" title="三星（SAMSUNG）35X0AA-X05 15.6英寸笔记本电脑（i5-8250U 8G 500GB+128GSSD FHD" data-mcinfo="2437,3,4,01751296-05488621-8600661975-7219173#1-0-2--0--#1-tb-#3-1739810#pc.cms.u,1#2#63c718f0f223068ba09cbe4b796447fe0cc1fd38-0-621037#1739810,1#2-63c718f0f223068ba09cbe4b796447fe0cc1fd38-0-621037-3">
+                        <img width="160" height="160" src="//img14.360buyimg.com/n2/jfs/t21739/5/19281763/231781/e100fe49/5af593dcN4857cc21.jpg!q90.jpg">
+                    </a>
+                </div>
+                <a href="//item.jd.com/7219173.html" target="_blank" title="三星（SAMSUNG）35X0AA-X05 15.6英寸笔记本电脑（i5-8250U 8G 500GB+128GSSD FHD" class="p-name">
+                    三星（SAMSUNG）35X0AA-X05 15.6英寸笔记本电脑（i5-8250U 8G 500GB+128GSSD FHD
+                </a>
+                <div class="p-price" data-price-id="7219173">¥4499.00</div>
+                <i class="mark fore1">+</i>
+                <i class="mark fore2">+</i>
+                <i class="mark fore3">+</i>
+                <i class="mark fore4">+</i>
+            </li>
+        </ul>
+        <div class="quan" data-quan-id="19946">
+        <div class="quan-wrap"><a href="//coupon.jd.com/ilink/couponSendFront/send_index.action?key=cec7141c8e424e768c596593b0b7e1b0&amp;roleId=11519408&amp;to=//sale.jd.com/act/hHFbG0aSyJuXp.html" target="_blank" class="quan-info" clstag="channel|keycount|2437|quan-3-0">
+            <div class="p-price">666</div><div class="p-name">消费满5000可用</div></a></div>
+             <a href="https://a.jd.com/coupons.html?cat=16" target="_blank" class="quan-more" clstag="channel|keycount|2437|more-3-0"></a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="brand-2017030902 elevator-floor" data-channel="computer" data-version="1.0.0" data-path="6" data-tpl="brand" data-idx="2" data-lazy="done">        <div class="mt">
+        <span class="title">优选品牌</span>
+        <span class="sub-title">&nbsp;好品敢“耍大牌”</span>
+    </div>
+    <div class="mc">
+        <ul class="brand-list">
+            <li class="brand-item fore1" clstag="channel|keycount|2437|nfa-9196-0">
+                <a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvRO8dN8QPZQdHhW9B83ZXglGczrkduLAvYLSipdijh9zSAYvrOTUjuHrGxwbHiBXzkadPDxV3tyTowFf+QzyDqFA1HWmoByPeXmwN+vPPmAue88vbCjJwzgisfHGxcwS/sj1ATTANAzd+QZ3beAF36KBtl/viTALIAy8fwior3SCBRO8kB+sSzSS0dWVpqx287jLMnQRjLX8LeruC5DQu2wwDKXBn/4XyfZBkqZDvr0dRqsYAhmxRmBoISpVNFyZRXL4a+892nOos/0aSRnf6vbMmf9HLeDipRHAKm4vcfN+U1KKFU6qVYkYEbrR18iEkgIA==&amp;cv=2.0&amp;url=https://sale.jd.com/act/8nT5PJsoEQcM.html" target="_blank" class="brand-link">
+                    <img width="201" height="110" src="//img13.360buyimg.com/da/jfs/t17611/272/535229557/6130/36f2411c/5a913d8fN34013ae2.png!q90.png">
+                    <div class="p-info">
+                        <div class="p-title">联想专场</div>
+                        <span class="p-text">联想专场</span>
+                    </div>
+                </a>
+            </li>
+            <li class="brand-item fore2" clstag="channel|keycount|2437|nfa-9196-1">
+                <a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvRO8dN8QPZQdHhW9B83ZXglGczrkduLAvYLSipdijh9zSANmrfmD2NpOHXOmsFnQWl7ryvQcwnxP/8XLVexDVYoT1HWmoByPeXmwN+vPPmAue88vbCjJwzgisfHGxcwS/sjyaGbX2SX6ifKJ9TR/10sBa67QUUvZbPmUWXkI7GYEt7O8kB+sSzSS0dWVpqx287jLMnQRjLX8LeruC5DQu2wwDKXBn/4XyfZBkqZDvr0dRqsYAhmxRmBoISpVNFyZRXL4a+892nOos/0aSRnf6vbMmf9HLeDipRHAKm4vcfN+U1KKFU6qVYkYEbrR18iEkgIA==&amp;cv=2.0&amp;url=https://sale.jd.com/act/cVEN7tLhZPb1.html" target="_blank" class="brand-link">
+                    <img width="201" height="110" src="//img20.360buyimg.com/da/jfs/t15847/207/2162511409/4770/e4217964/5a913dd0N2d3f6fbf.jpg!q90.jpg">
+                <div class="p-info">
+                        <div class="p-title">ThinkPad专场</div>
+                        <span class="p-text">ThinkPad专场</span>
+                    </div>
+                </a>
+            </li>
+            <li class="brand-item fore3" clstag="channel|keycount|2437|nfa-9196-2">
+                <a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvRO8dN8QPZQdHhW9B83ZXglGczrkduLAvYLSipdijh9zSAPUCgSUyou6MDbxOYA+rrQC6CnSpmNToY/q+R5TOduj5HWmoByPeXmwN+vPPmAue88vbCjJwzgisfHGxcwS/sjyZqvTy1NMA1fXOvmLRoOxq6aNKn5YhnmNHzCREFgfvnZzMI/FNcIyqPvs7l7kzfgqwuiHO85wBSyA1FPeT/jgXBkyxapGKK0bayuRsyF1CjSHY0JSwCJdCXubq2wQCesktkSSOFA1pdGE/Iy7jQSEYQlCt5qtzWUNQR7nMClgnfA8pekfb4uNQnqgcfk9CP5w==&amp;cv=2.0&amp;url=https://sale.jd.com/act/vXW6417xIjoKm.html" target="_blank" class="brand-link">
+                    <img width="201" height="110" src="//img14.360buyimg.com/da/jfs/t19762/307/526775494/4212/c8b6c35f/5a913e04N36556665.jpg!q90.jpg">
+                    <div class="p-info">
+                        <div class="p-title">惠普专场</div>
+                        <span class="p-text">惠普专场</span>
+                    </div>
+                </a>
+            </li>
+            <li class="brand-item fore4" clstag="channel|keycount|2437|nfa-9196-3">
+                <a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvRO8dN8QPZQdHhW9B83ZXglGczrkduLAvYLSipdijh9zSAYyeEQVZBMrXN/CtP0c79jae3LqU5BFGk0OFW5eZVGg9HWmoByPeXmwN+vPPmAue88vbCjJwzgisfHGxcwS/sjya0DEvw+ahTTb1PeploryrcmYERukZ/wjsLW/+sihklBvY0tDzeYVvO6GD7pv64H8vAa6QAm01CnX10pC6qyde7NopedPC3du7DL5C86LCm7rgAJfsDkN3cr39q/mKyOw8DnD4R7zcofvTr4ytU1fEqjV5eNKY+ZtEexFIgZ9O50KLb4qjigzwt6HHBU+SMjg==&amp;cv=2.0&amp;url=https://sale.jd.com/act/BwH7FSalp8Y.html" target="_blank" class="brand-link">
+                    <img width="201" height="110" src="//img20.360buyimg.com/da/jfs/t16996/203/522434733/6743/464a32ce/5a913e37N5767baed.jpg!q90.jpg">
+                    <div class="p-info">
+                        <div class="p-title">华硕专场</div>
+                        <span class="p-text">华硕专场</span>
+                    </div>
+                </a>
+            </li>
+            <li class="brand-item fore5" clstag="channel|keycount|2437|nfa-9196-4">
+                <a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvRO8dN8QPZQdHhW9B83ZXglGczrkduLAvYLSipdijh9zSAp66Ci+0+n+qk0Xd0OoTmxKbnwjsv1/ybUZ1CkDzT6bZHWmoByPeXmwN+vPPmAue8TRVQs/zAx12YZbVi+O/k+ZpteJyIjUdWhpXN4lsqb7tGtcynb7JzGimEom5fEkC0zcHJ2ltM3Zj7gMXaNqWrNUHDHJOWgajMpcFLrQ7KrFLIxN0P8kYidLo8ATDXnhBNGsF79cSHbjZyaB7bQmyL/fo0trTgEVa5wyiRtYrPVJi4d/w23oTQBvdc76jXa2OO&amp;cv=2.0&amp;url=https://logitech.jd.com/?cpdad=1DLSUE" target="_blank" class="brand-link">
+                    <img width="201" height="110" src="//img12.360buyimg.com/da/jfs/t18505/271/516135525/5472/ca272b3/5a913e86Na4db017d.jpg!q90.jpg">
+                    <div class="p-info">
+                        <div class="p-title">罗技专场</div>
+                            <span class="p-text">罗技专场</span></div>
+                </a>
+            </li>
+            <li class="brand-item fore6" clstag="channel|keycount|2437|nfa-9196-5">
+                <a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvRO8dN8QPZQdHhW9B83ZXglGczrkduLAvYLSipdijh9zSAFqgHKejntcOIprsE53NH4oBQb/Mk1d20VpYg7GdVGMxHWmoByPeXmwN+vPPmAue88vbCjJwzgisfHGxcwS/sj84t9L0EuB4O3u1D6AATKNZum7Mw1OQ2VlddYv23ZAYMqg7lBKMNaPUH7HUwVbi2CBd0Hr7Fi8hVunvZC4tPYiigwBDdtxSPU3z8cp50sfgiF1pAhcXBWv+zgtdSUzgYBEGXVSM3evs0GIN7W0oIHYZuynqN4iTv4/b1f66WBNE0YyuRuUC5Ueuy0w4BtYM9ig==&amp;cv=2.0&amp;url=https://sale.jd.com/act/byHCX2FDl6xuNjaY.html" target="_blank" class="brand-link">
+                    <img width="201" height="110" src="//img13.360buyimg.com/da/jfs/t18310/340/509479686/5718/68db9eda/5a913eb5Nd2f812d6.jpg!q90.jpg">
+                    <div class="p-info">
+                        <div class="p-title">极米专场</div>
+                        <span class="p-text">极米专场</span>
+                    </div>
+                </a>
+            </li>
+            <li class="brand-item fore7" clstag="channel|keycount|2437|nfa-9196-6">
+                <a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvRO8dN8QPZQdHhW9B83ZXglGczrkduLAvYLSipdijh9zSA2gaEFpB8D2DKvDj6VCj06jBqsMfavbbvgT0F2wfv2UFHWmoByPeXmwN+vPPmAue88vbCjJwzgisfHGxcwS/sjx92ar+IKtJ0TNlms4ya7aUSY36MSikLdea4C+CI4qUUqg7lBKMNaPUH7HUwVbi2CBd0Hr7Fi8hVunvZC4tPYiigwBDdtxSPU3z8cp50sfgiF1pAhcXBWv+zgtdSUzgYBEGXVSM3evs0GIN7W0oIHYZuynqN4iTv4/b1f66WBNE0YyuRuUC5Ueuy0w4BtYM9ig==&amp;cv=2.0&amp;url=https://sale.jd.com/act/K6c3y7S1z4UaxG5X.html" target="_blank" class="brand-link">
+                    <img width="201" height="110" src="//img10.360buyimg.com/da/jfs/t14455/293/2273605083/6625/e55b44a2/5a913ee9N687de4e9.jpg!q90.jpg"><div class="p-info">
+                    <div class="p-title">机械革命专场</div>
+                    <span class="p-text">机械革命专场</span>
+                </div>
+                </a>
+            </li>
+            <li class="brand-item fore8" clstag="channel|keycount|2437|nfa-9196-7">
+                <a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvRO8dN8QPZQdHhW9B83ZXglGczrkduLAvYLSipdijh9zSAp3hpUxJMZtT93h22y10QnfVLmaJATAvE+BdMhpuvUPBHWmoByPeXmwN+vPPmAue88vbCjJwzgisfHGxcwS/sj7EU7WRURr8rF8mr+Nt9J4zI2Me/ajfOj7Kl4eIwbYj0PcADfOydEgb3r/t/IOD6jebwKAFQoJNlTkPYqRWHa7QpodVXpEL15gIhF7tS9XGTIH/3PVpFk1yWjCKplUWsYiZkUIzjmhlPlHv4wTLvUHI6PS3e2iAxIftN/cIOoqdkLMz+Zwh2Sv2uEPtOqU+3QA==&amp;cv=2.0&amp;url=https://sale.jd.com/act/GosgzZ7cO2ylNCw.html" target="_blank" class="brand-link">
+                    <img width="201" height="110" src="//img30.360buyimg.com/da/jfs/t14851/307/2176257079/5673/dc9655a9/5a913f24N7bae77b7.jpg!q90.jpg">
+                    <div class="p-info">
+                        <div class="p-title">得力专场</div>
+                        <span class="p-text">得力专场</span>
+                    </div>
+                </a>
+            </li>
+            <li class="brand-item fore9" clstag="channel|keycount|2437|nfa-9196-8">
+                <a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvRO8dN8QPZQdHhW9B83ZXglGczrkduLAvYLSipdijh9zSAVMRj+Anhf9oS+aGJdbixzvKP88dcNFxaEXoEejyXgSlHWmoByPeXmwN+vPPmAue88vbCjJwzgisfHGxcwS/sjw5NgdPZ3d8Z6JVVFh2NNSN3ZtIVBoAuZL5g5TmBUqqkBvY0tDzeYVvO6GD7pv64H8vAa6QAm01CnX10pC6qyde7NopedPC3du7DL5C86LCm7rgAJfsDkN3cr39q/mKyOw8DnD4R7zcofvTr4ytU1fEqjV5eNKY+ZtEexFIgZ9O50KLb4qjigzwt6HHBU+SMjg==&amp;cv=2.0&amp;url=https://sale.jd.com/act/LAoSE7GbVRU.html" target="_blank" class="brand-link"><img width="201" height="110" src="//img11.360buyimg.com/da/jfs/t15262/198/2281992266/10329/adf9de94/5a913f70N76080255.jpg!q90.jpg">
+                    <div class="p-info">
+                        <div class="p-title">坚果专场</div>
+                        <span class="p-text">坚果专场</span>
+                    </div>
+                </a>
+            </li>
+            <li class="brand-item fore10" clstag="channel|keycount|2437|nfa-9196-9">
+                <a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvRO8dN8QPZQdHhW9B83ZXglGczrkduLAvYLSipdijh9zSA4Zuds/LTrdBEUupPlBkNCEUsGnuXDj6qhMnuLhLypWRHWmoByPeXmwN+vPPmAue88vbCjJwzgisfHGxcwS/sj2WvgwNxYPTUDm/N3hzCdtsN2flm+AqCFbpC66cEAAxiAkuOIdHLRtkW/q4CIdzM/gKe2acHG0Ajuj9L8JXxidE+hmSpgLz9xmR1xEiObDPEY2cXhMASnNvmSUyLnxgFsxMv49nQdfWafuMVCtVmz8qXOlcppL6VE6XAjxQTKJJ8WOo1bdnPYgppNB+nDWfC8A==&amp;cv=2.0&amp;url=https://sale.jd.com/act/aiRpDhf7EzKONd.html" target="_blank" class="brand-link">
+                    <img width="201" height="110" src="//img30.360buyimg.com/da/jfs/t16381/273/2077518117/5091/17fb3dfd/5a913fbdN7b225820.jpg!q90.jpg">
+                    <div class="p-info">
+                        <div class="p-title">戴尔G系列新品上市 3期免息</div>
+                        <span class="p-text">戴尔G系列新品上市 3期免息</span>
+                    </div>
+                </a>
+            </li>
+            <li class="brand-item fore11" clstag="channel|keycount|2437|nfa-9196-10">
+                <a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvRO8dN8QPZQdHhW9B83ZXglGczrkduLAvYLSipdijh9zSAREofPZiHSunSZJwgI//mNHKoiC7frQIe4cA8RZR8XQZHWmoByPeXmwN+vPPmAue88vbCjJwzgisfHGxcwS/sj9Z+4EdhmtNZGpGYFvB5eJ4x+t/d4jbXzOxuVPMOeRsIPcADfOydEgb3r/t/IOD6jebwKAFQoJNlTkPYqRWHa7QpodVXpEL15gIhF7tS9XGTIH/3PVpFk1yWjCKplUWsYiZkUIzjmhlPlHv4wTLvUHI6PS3e2iAxIftN/cIOoqdkLMz+Zwh2Sv2uEPtOqU+3QA==&amp;cv=2.0&amp;url=https://sale.jd.com/act/2e1hdNXIBf7ivxC.html" target="_blank" class="brand-link">
+                    <img width="201" height="110" src="//img13.360buyimg.com/da/jfs/t19033/232/501654136/6168/70de9bd4/5a913ffbN28dc4d6e.jpg!q90.jpg">
+                    <div class="p-info">
+                        <div class="p-title">西部数据专场</div>
+                        <span class="p-text">西部数据专场</span>
+                    </div>
+                </a>
+            </li>
+            <li class="brand-item fore12" clstag="channel|keycount|2437|nfa-9196-11">
+                <a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvRO8dN8QPZQdHhW9B83ZXglGczrkduLAvYLSipdijh9zSA1o6ni4OoIEbp6l71f31XGRlnAwMdg8B0tW085qhGZoxHWmoByPeXmwN+vPPmAue87GjtcBUvNHzHnCFvzwZWnZbSaoKk7JFqnjbCTjoxP0O3nH+UQhQ8IyoKKUyU3x/aO8kB+sSzSS0dWVpqx287jLMnQRjLX8LeruC5DQu2wwDKXBn/4XyfZBkqZDvr0dRqsYAhmxRmBoISpVNFyZRXL4a+892nOos/0aSRnf6vbMmf9HLeDipRHAKm4vcfN+U1KKFU6qVYkYEbrR18iEkgIA==&amp;cv=2.0&amp;url=https://mall.jd.com/index-1000007482.html" target="_blank" class="brand-link">
+                    <img width="201" height="110" src="//img20.360buyimg.com/da/jfs/t19429/225/498539285/12380/a6bb2f26/5a914059Ne58d3df2.jpg!q90.jpg">
+                    <div class="p-info">
+                        <div class="p-title">intel专场</div>
+                        <span class="p-text">intel专场</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+<!--品质保证-->
+<div class="width1200 center_yh" style="height:130px;margin-top:60px;">
+	<img src="images/db.png">
+</div>
+<!--页脚-->
+<div class="width100 hidden_yh" style="background:#f0f0f0;margin-top:90px;">
+	<div class="width1200 center_yh tcenter" style="margin-top:44px;">
+    	<a href="#" class="in_block font16 c_33" style="padding:0 30px"></a>
+        <a href="#" class="in_block font16 c_33" style="padding:0 30px"></a>
+        <a href="#" class="in_block font16 c_33" style="padding:0 30px"></a>
+        <a href="#" class="in_block font16 c_33" style="padding:0 30px"></a>
+        <a href="#" class="in_block font16 c_33" style="padding:0 30px"></a>
+        <p class="font16 c_33 tcenter" style="margin-top:46px;">www.diannaohaitao.com © CopyRight 电脑海淘 2018-2018 </p>
+        <p class="font16 c_33 tcenter" style="margin-top:6px;">电话：000-0000000 手机：18022113311</p>
+        <p class="font16 c_33 tcenter" style="margin-top:6px;margin-bottom:10px;">鲁ICP备:1666666号-1</p>
+    </div>
+</div>
+</body>
+</html>
