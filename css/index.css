@@ -1,6 +1,7 @@
 .container {
     width: 1210px;
     margin: 0 auto;
+    overflow: hidden;
 }
 h3 {
     font-size: 14px;
