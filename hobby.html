@@ -6,30 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/hobby.css">
     <title>电脑海淘-用户偏好选择</title>
+    <style>
+        .selected {
+            background-color: aqua;
+        }
+    </style>
 </head>
 <body>
     <div id="container">
         <p>请根据您个人情况选择下面的标签，我们将根据您的偏好来推荐给您更合适的商品</p>
-        <div id="brand">
-            <div><strong>电脑品牌: </strong></div>
-            <div class="brand selected">华硕</div>
-            <div class="brand selected">联想</div>
-            <div class="brand selected">苹果</div>
-        </div>
-        <div id="type">
-            <strong>电脑类型：</strong>
-            <div class="type selected">笔记本</div>
-            <div class="type selected">台式机</div>
-            <div class="type selected">平板</div>
-        </div>
-        <div id="price">
-            <strong>价格：</strong>
-            <div class="price selected">4000以下</div>
-            <div class="price selected">4000-8000</div>
-            <div class="price selected">8000以上</div>
-        </div>
+        <ul id="brand">
+            <li><strong>电脑品牌: </strong></li>
+            <li class="brand">华硕</li>
+            <li class="brand">联想</li>
+            <li class="brand">Apple</li>
+            <li class="brand">戴尔</li>
+            <li class="brand">小米</li>
+        </ul>
+        <ul id="type">
+            <li><strong>电脑类型：</strong></li>
+            <li class="type">笔记本</li>
+            <li class="type">台式机</li>
+        </ul>
+        <ul id="price">
+            <li><strong>价格：</strong></li>
+            <li class="price">4000以下</li>
+            <li class="price">4000-8000</li>
+            <li class="price">8000以上</li>
+        </ul>
         <div><a href="./index.html">进入首页>></a></div>
     </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(
+            $('li').click(function () { $(this).toggleClass('selected')})
+        )
+    </script>
 </body>
-<script src="/js/hobby.js"></script>
 </html>
