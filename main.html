@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="css/main.css">
 <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
-<script src="js/jquery.luara.0.0.1.min.js"></script>
 </head>
 <style>
     body {
@@ -20,7 +19,7 @@
     }
 </style>
 <body>
-<div class="width100" id="beforeLogin" style="height:25ox;background:#f0f0f0;display: block;">
+<div class="width100" id="beforeLogin" style="height:25px;background:#f0f0f0;display: block;">
 	<div class="width1200 center_yh font14 c_66" style="height:25px;line-height:25px;">
     	<font class="left_yh">欢迎来到电脑海淘商城！</font>
         <div class="right_yh" id="fast_jump">
@@ -30,10 +29,10 @@
         </div>
     </div>
 </div>
-<div class="width100" id="afterLogin" style="height:25ox;background:#f0f0f0;display: none;">
+<div class="width100" id="afterLogin" style="height:25px;background:#f0f0f0;display: none;">
 	<div class="width1200 center_yh font14 c_66" style="height:25px;line-height:25px;">
     	<div class="left_yh" id="hello"></div>
-        <div class="right_yh" id="fast_jump">
+        <div class="right_yh">
             <img src="/images/mrtx.png" style="width: 18px;height: 18px;line-height: 25px;"><a href="./my.html" style="margin-top: -20px;">个人中心</a>
         </div>
     </div>
@@ -50,87 +49,88 @@
     </div>
 </div>
 <!--导航条-->
-<div class="width100" style="height:45px;background:#dd4545;margin-top:px;position:relative;z-index:100;text-decoration: none!;">
+<div class="width100" style="height:45px;background:#dd4545;margin-top:px;position:relative;z-index:100;">
 	<!--中间的部分-->	
 	<div class="width1200 center_yh relative_yh" style="height:45px;">
     	<!--列表导航(downSlide就显示,否则就不显示)-->
     	<div class="left_yh" style="width:230px;height:45px;" id="hiddenShow">
         	<!--头部的图标-->
         	<img src="images/cd.png" class="left_yh" style="margin-left:24px;">
-            <span class="block_yh left_yh fff" style="height:45px;line-height:44px;margin-left:10px;">阶段分类</span>
+            <span class="block_yh left_yh fff" style="height:45px;line-height:44px;margin-left:10px;">电脑分类</span>
             <!--下面的导航展开部分-->
             <div class="downSlide">
             	<!--一块-->
             	<div class="n1Nav">
-                	<font>青少年</font>
+                	<font>台式机</font>
                     <img src="images/jt.png">
                     <div class="n2Nav">
                     	<div class="n3Nav">
-                        	<h3>笔记本</h3>
-                            <a href="#">笔记本1</a>
-                            <a href="#">笔记本2</a>
-                            <a href="#">笔记本3</a>
-                            <a href="#">笔记本4</a>
-                            <a href="#">笔记本5</a>
+                            <h3>热门品牌</h3>
+                            <a href="#">联想</a>
+                            <a href="#">戴尔</a>
+                            <a href="#">惠普</a>
+                            <a href="#">小米</a>
+                            <a href="#">Apple</a>
                         </div>
                         <div class="n3Nav">
-                        	<h3>台式机</h3>
-                            <a href="#">台式机1</a>
-                            <a href="#">台式机2</a>
-                            <a href="#">台式机3</a>
-                            <a href="#">台式机4</a>
-                            <a href="#">台式机5</a>
+                            <h3>热门分类</h3>
+                            <a href="#">游戏达人</a>
+                            <a href="#">时尚轻薄</a>
+                            <a href="#">校园学生</a>
+                            <a href="#">商用电脑</a>
+                            <a href="#">家用电脑</a>
                         </div>
                         <div class="n3Nav">
-                        	<h3>平板</h3>
-                            <a href="#">平板1</a>
-                            <a href="#">平板2</a>
-                            <a href="#">平板3</a>
-                            <a href="#">平板4</a>
-                            <a href="#">平板5</a>
+                            <h3>热门配置</h3>
+                            <a href="#">i7笔记本</a>
+                            <a href="#">i5笔记本</a>
+                            <a href="#">14寸</a>
+                            <a href="#">i7台式机</a>
+                            <a href="#">i5台式机</a>
+                            <a href="#">游戏电脑</a>
                         </div>
                     </div>
                 </div>
                 <!--一块-->
                 <div class="n1Nav">
-                	<font>成年人</font>
-                    <img src="images/jt.png">
-                    <div class="n2Nav">
-                        <div class="n3Nav">
-                            <h3>笔记本</h3>
-                            <a href="#">笔记本1</a>
-                            <a href="#">笔记本2</a>
-                            <a href="#">笔记本3</a>
-                            <a href="#">笔记本4</a>
-                            <a href="#">笔记本5</a>
-                        </div>
-                        <div class="n3Nav">
-                            <h3>台式机</h3>
-                            <a href="#">台式机1</a>
-                            <a href="#">台式机2</a>
-                            <a href="#">台式机3</a>
-                            <a href="#">台式机4</a>
-                            <a href="#">台式机5</a>
-                        </div>
-                        <div class="n3Nav">
-                            <h3>平板</h3>
-                            <a href="#">平板1</a>
-                            <a href="#">平板2</a>
-                            <a href="#">平板3</a>
-                            <a href="#">平板4</a>
-                            <a href="#">平板5</a>
+                        <font>笔记本</font>
+                        <img src="images/jt.png">
+                        <div class="n2Nav">
+                            <div class="n3Nav">
+                                <h3>热门品牌</h3>
+                                <a href="#">联想</a>
+                                <a href="#">戴尔</a>
+                                <a href="#">惠普</a>
+                                <a href="#">小米</a>
+                                <a href="#">Apple</a>
+                            </div>
+                            <div class="n3Nav">
+                                <h3>热门分类</h3>
+                                <a href="#">游戏达人</a>
+                                <a href="#">时尚轻薄</a>
+                                <a href="#">校园学生</a>
+                                <a href="#">商用电脑</a>
+                                <a href="#">家用电脑</a>
+                            </div>
+                            <div class="n3Nav">
+                                <h3>热门配置</h3>
+                                <a href="#">i7笔记本</a>
+                                <a href="#">i5笔记本</a>
+                                <a href="#">14寸</a>
+                                <a href="#">i7台式机</a>
+                                <a href="#">i5台式机</a>
+                                <a href="#">游戏电脑</a>
+                            </div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
         <!--普通导航-->
-        <div class="left_yh font16" style="color: white;" id="pageNav">
+        <div class="left_yh font16" id="pageNav">
             <a href="index.html">首页</a>
             <a href="recommand.html">今日推荐</a>
             <a href="main.html">对比专区</a>
             <a href="hobbyShow.html">个性化</a>
-            <a href="#">商城社区</a>
         </div>
     </div>
 </div>
@@ -202,489 +202,488 @@
             <ul id="list">
                 <li style="background-color: #dd4545;color: #fff;">综合</li>
                 <li>销量↓</li>
-                <li>评论数↓</li>
                 <li>价格↓</li>
             </ul>
         </div>
         <div class="right-body">
-            <div style="width: 1040px; height: 100%;border: 0;">
+            <div style="width: 1040px; height: 100%;">
                 <ul class="list-group">
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px;">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
                     </li>
                     <li>
-                        <div class="normalPic" style="width:240px;height: 400px;border: none;">
-                            <a href="#" style="width: 240px; height: 400px; ">
-                                <img id="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
-                                <p id="price" class="red font14" style="font-size:34px;margin-top: 20px; padding-left:10px;">￥299.9</p>
-                                <p id="desc" class="yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                <p id="review" class="yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
-                                <p id="address" class="yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
+                        <div class="normalPic" style="width:240px;height:400px;">
+                            <a href="javascript:void(0);" style="width: 240px; height: 400px;">
+                                <img class="picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="220" height="220" style="margin:0 auto">
+                                <p class="price red font14" style="font-size:26px;margin-top: 20px; padding-left:10px;">￥299.9</p>
+                                <p class="desc yihang c_33 font14 font100" style="padding-left:10px;padding-right:10px;margin-top:10px;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
+                                <p class="review yihang c_33 font14 font100" style="padding-left: 10px;">6200+条评价</p>
+                                <p class="address yihang c_33 font14 font100" style="padding-left: 10px;">惠普京东自营官方旗舰店</p>
                                 <div class="yihang c_33 font14 font100" style="float: right; color: #dd4545; margin-top: 10px;margin-right: 10px;border: 1px solid grey;border-radius: 4px;">加入对比栏</div>
                             </a> 
                         </div>
@@ -693,7 +692,6 @@
 		    </div>
         </div>
     </div>
-
 </div>
 <!--品质保证-->
 <div class="width1200 center_yh" style="height:130px;margin-top:60px;">
@@ -709,19 +707,22 @@
 </div>
 
 <script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="js/jquery.luara.0.0.1.min.js"></script>
 <script type="text/javascript" src="js/paginathing.js"></script>
 <script type="text/javascript">
-  jQuery(document).ready(function($){
+$(document).ready(function($){
+    $("#list").on("click","li",function(){  
+        $("#list li").eq($(this).index()).attr("style","background:#dd4545;color:#fff;").siblings().removeAttr("style"); 
+    });
     $('.list-group').paginathing({
       perPage: 8,
       limitPagination: 5,
       containerClass: 'panel-footer',
       pageNumbers: true
-    });
-    $("#list").on("click","li",function(){  
-            $("#list li").eq($(this).index()).attr("style","background:#dd4545;color:#fff;").siblings().removeAttr("style"); 
-        });  
+    });  
+    $('.normalPic').click(function() {
+        $('.normalPic').children('div').val() = '已加入对比栏';
+    })
   });
 </script>
 </body>
