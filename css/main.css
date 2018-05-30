@@ -17,9 +17,9 @@
     color: #666;
     text-decoration: none;
 }
-img.err-product {
+/* img.err-product {
     background: url(//misc.360buyimg.com/lib/skin/e/i/error-jd.gif) no-repeat;
-}
+} */
 .ad li {
     width: 176px;
     height: 260px;
@@ -104,6 +104,7 @@ img.err-product {
 .normalPic {
     margin-left: 10px;
     margin-top: 10px;
+    font-size: 16px!important;
 }
 .normalPic a:hover {
     border: 1px solid rgb(207, 202, 202);
@@ -117,4 +118,64 @@ img.err-product {
     background-color: rgb(236, 234, 234)!important;
     margin-top: -908px;
     margin-right: -14px;
+}
+#pop-compare.pop-compare-narrow {
+    width: 970px;
+    margin-right: -475px;
+}
+#pop-compare {
+    display: none;
+    position: fixed;
+    bottom: -200px;
+    right: 50%;
+    margin-right: -495px;
+    z-index: 100;
+    width: 990px;
+    height: 139px;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(221,221,221,.8);
+}
+#pop-compare.pop-compare-narrow .pop-wrap {
+    width: 970px;
+}
+#pop-compare .pop-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 990px;
+}
+.pop-compare-tips {
+    display: none;
+    height: 27px;
+    margin-top: -29px;
+    line-height: 27px;
+    border: 1px solid #db9a9a;
+    color: #c00;
+    text-align: center;
+    background: #ffe8e8;
+    _margin-top: 0;
+}
+#pop-compare .pop-inner {
+    height: 133px;
+}
+#pop-compare .diff-hd {
+    position: relative;
+}
+#pop-compare .diff-hd .tab-btns {
+    height: 32px;
+    border: 1px solid #ddd;
+    border-bottom: 2px solid #7abd54;
+    _overflow: hidden;
+}
+.clearfix {
+}
+ol, ul {
+    list-style: none;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
