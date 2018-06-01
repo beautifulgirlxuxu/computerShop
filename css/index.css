@@ -195,7 +195,7 @@ a {
     border-left: 1px solid #eee;
 }
 img {
-    background: url(//misc.360buyimg.com/lib/skin/e/i/error-jd.gif) no-repeat 50% 50%;
+    /* background: url(//misc.360buyimg.com/lib/skin/e/i/error-jd.gif) no-repeat 50% 50%; */
     border: 0;
     vertical-align: middle;
 }
