@@ -1,0 +1,27 @@
+h3 {
+    font-size: 14px;
+    margin-top: -20px;
+    height: 32px;
+    border-bottom: 1px dashed #8ccbfe;
+    text-align: center;
+}
+.title-wrap {
+    display: inline-block;
+    height: 34px;
+    margin-top: 15px;
+    padding: 0 5px;
+    color: #13a2ff;
+    background: #f8f8f8;
+    line-height: 34px;
+}
+.title-wrap i {
+    float: left;
+    width: 34px;
+    height: 34px;
+    background: url(//misc.360buyimg.com/channel/computer/1.0.0/widget/qiang/i/qiang.png) no-repeat;
+}
+.title-wrap .title {
+    float: left;
+    font-size: 26px;
+    margin: 0 5px 0 10px;
+}
