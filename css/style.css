@@ -83,7 +83,7 @@ input,select{font-size:14px;}
 .btnSearh:hover{background:#bf3a3a}
 .Selected{background:#ff5802;}
 .Selected .downSlide{display:block;}
-#pageNav a{display:block;float:left;width:150px;text-align:center;color:white;line-height:45px;height:45px;}
+#pageNav a{display:block;float:left;width:180px;text-align:center;color:white;line-height:45px;height:45px;}
 #pageNav a:hover{letter-spacing:3px;padding-left:6px;padding-right:6px;transition:0.3s;text-decoration:none;}
 .downSlide{width:230px;height:490px;background:#ff5802;position:absolute;top:45px;left:0;display:none;}
 #hiddenShow:hover{background:#ff5802;}
@@ -117,8 +117,8 @@ input,select{font-size:14px;}
 .tone{width:1280px;height:300px;}
 .tone a{display:block;width:227px;height:300px;float:left;margin-right:17px;background:#000;transition:0.2s;}
 .tone a:hover{margin-top:-2px;box-shadow:0 6px 12px rgba(0,0,0,0.1)}
-.normalPic{width:972px;height:388px;float:left;border-right:1px solid #ddd;}
-.normalPic a{display:block;width:193px;height:193px;background:#fff;border-left:1px solid #ddd;float:left;border-bottom:1px solid #ddd}
+.normalPic{width:972px;height:388px;float:left;text-decoration: none!important;}
+.normalPic a{display:block;width:193px;height:193px;background:#fff;float:left;}
 .normalPic a img{transition:0.2s;}
 /* .normalPic a:hover img{margin-top:-2px!important;} */
 /*商品展示区域(lib.js/163ccc.js[独立一支])*/
