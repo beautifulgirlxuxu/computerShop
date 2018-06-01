@@ -167,15 +167,118 @@
     border-bottom: 2px solid #7abd54;
     _overflow: hidden;
 }
-.clearfix {
-}
 ol, ul {
     list-style: none;
 }
-.clearfix:after {
-    content: ".";
-    display: block;
-    height: 0;
+#pop-compare .tab-btns .current {
+    position: relative;
+    left: -1px;
+    margin-top: -4px;
+    height: 36px;
+    background: #fff;
+    border: 2px solid #7abd54;
+    border-bottom: 0;
+}
+.duibi {
+    text-decoration: none;
+}
+#pop-compare .diff-hd li {
+    float: left;
+    position: relative;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font: 14px/30px 'microsoft yahei';
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+#pop-compare .diff-hd .operate {
+    width: 190px;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: 22px;
+    height: 30px;
+    line-height: 30px;
     clear: both;
-    visibility: hidden;
+}
+#pop-compare .hide-me, .diff-operate a {
+    color: #005aa0;
+    text-decoration: none;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: auto;
+    /* text-decoration: underline; */
+}
+#pop-compare .diff-bd {
+    position: relative;
+}
+#pop-compare .tab-con {
+    height: 106px;
+    margin-top: -10px;
+    border: 2px solid #7abd54;
+    border-top: none;
+}
+#pop-compare div#diff-items {
+    width: 100%;
+    padding: 6px;
+    color: #ccc;
+    height: 90px;
+    /* overflow: hidden; */
+}
+#pop-compare #diff-items li{
+    float: left;
+    overflow: hidden;
+    padding: 17px 10px 12px 0;
+    margin-left: -11px;
+    /* border-right: 1px dotted #7abd54; */
+}
+.item-empty {
+    width: 206px;
+    height: 105px;
+    /* border: 1px solid rebeccapurple; */
+}
+.little-picture {
+    width:80px;
+    height:80px; 
+    float: left;
+}
+.little-desc {
+    width:100px;
+    float: left;
+}
+.little-price {
+    width:60px;font-size:16px;
+    float: left;
+}
+#pop-compare.pop-compare-narrow .diff-operate {
+    right: 14px;
+}
+#pop-compare .diff-operate {
+    position: absolute;
+    right: 22px;
+    top: 22px;
+    width: 85px;
+    text-align: center;
+}
+#goto-contrast {
+    display: block;
+    width: 59px;
+    height: 30px;
+    font: 700 14px/30px verdana;
+    margin-left: 13px;
+    margin-bottom: 11px;
+    border-radius: 3px;
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #ccc;
+    cursor: default;
+}
+#pop-compare .hide-me, .diff-operate a {
+    color: #005aa0;
 }
