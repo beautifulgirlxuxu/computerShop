@@ -256,6 +256,16 @@ a:-webkit-any-link {
     width:60px;font-size:16px;
     float: left;
 }
+.del {
+    font-size: 12px;
+    float: left;
+    cursor: pointer;
+    visibility: hidden;
+    margin-top: 2px;
+}
+.item-empty:hover .del{
+    visibility: visible;
+}
 #pop-compare.pop-compare-narrow .diff-operate {
     right: 14px;
 }
