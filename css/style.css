@@ -1,4 +1,8 @@
 *{margin:0;padding:0;list-style:none;text-decoration:none;font-family:"黑体";}
+body a:link{text-decoration:none;}
+body a:hover{text-decoration:none;}
+body a:active{text-decoration:none;}
+body a:visited{text-decoration:none;}
 a{color:#fff;}
 input{outline:medium;}
 input:-webkit-autofill{-webkit-box-shadow: 0 0 0px 1000px white inset;}
