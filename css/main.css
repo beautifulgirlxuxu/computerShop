@@ -109,8 +109,11 @@
 .normalPic a:hover {
     border: 1px solid rgb(207, 202, 202);
 }
-.normalPic img {
-    /* position: fixed; */
+.desc:hover {
+    color: #dd4545;
+}
+.review span {
+    color: rgb(118, 118, 231);
 }
 .panel-footer {
     height: 28px!important;
@@ -235,13 +238,16 @@ a:-webkit-any-link {
     float: left;
     overflow: hidden;
     padding: 17px 10px 12px 0;
-    margin-left: -11px;
-    /* border-right: 1px dotted #7abd54; */
+    /* margin-left: -11px; */
+    border-right: 1px dotted #7abd54;
 }
 .item-empty {
-    width: 206px;
+    width: 210px;
     height: 105px;
     /* border: 1px solid rebeccapurple; */
+}
+.item-empty:first-child {
+    margin-left: -68px;
 }
 .little-picture {
     width:80px;
@@ -253,8 +259,10 @@ a:-webkit-any-link {
     float: left;
 }
 .little-price {
-    width:60px;font-size:16px;
+    width:80px;
+    font-size:16px;
     float: left;
+    margin-top: -1px!important;
 }
 .del {
     font-size: 12px;
@@ -262,6 +270,7 @@ a:-webkit-any-link {
     cursor: pointer;
     visibility: hidden;
     margin-top: 2px;
+    margin-left: 20px;
 }
 .item-empty:hover .del{
     visibility: visible;
