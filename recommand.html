@@ -335,41 +335,42 @@
                     <ul id="diff-items" class="diff-items clearfix">
                         <li class="item-empty">
                             <div style="width:206px;height:79px;">
-                                <a href="javascript:void(0);" style="width: 206px; height: 79px;">
-                                    <img class="little-picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg">
+                                <!-- <a href="javascript:void(0);" style="width: 206px; height: 79px;"> -->
+                                    <!-- <img class="little-picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg">
                                     <p class="little-desc yihang c_33 font14 font100">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
                                     <p class="little-price red font14">￥2999.99</p>
-                                    <p class="del">删除</p>
-                                </a> 
+                                    <p class="del">删除</p> -->
+                                <!-- </a>  -->
                             </div>
                         </li>
                         <li class="item-empty">
                             <div style="width:206px;height:79px;">
-                                <a href="javascript:void(0);" style="width: 206px; height: 79px;">
+                                <!-- <a href="javascript:void(0);" style="width: 206px; height: 79px;">
                                     <img class="little-picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg">
                                     <p class="little-desc yihang c_33 font14 font100">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
                                     <p class="little-price red font14">￥299.99</p>
                                     <p class="del">删除</p>
-                                </a> 
+                                </a>  -->
                             </div>
                         </li>
                         <li class="item-empty">
                             <div style="width:206px;height:79px;">
                                 <a href="javascript:void(0);" style="width: 206px; height: 79px;">
-                                    <img class="little-picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg">
+                                    <!-- <img class="little-picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg">
                                     <p class="little-desc yihang c_33 font14 font100">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
                                     <p class="little-price red font14">￥2999.99</p>
-                                    <p class="del">删除</p>
+                                    <p class="del">删除</p> -->
                                 </a> 
                             </div>
                         </li>
                         <li class="item-empty">
                             <div style="width:206px;height:79px;">
-                                <a href="javascript:void(0);" style="width: 206px; height: 79px;">
+                                <!-- <a href="javascript:void(0);" style="width: 206px; height: 79px;">
                                     <img class="little-picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg">
                                     <p class="little-desc yihang c_33 font14 font100">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
                                     <p class="little-price red font14">￥299.9</p>
-                                </a> 
+                                    <p class="del">删除</p>
+                                </a>  -->
                             </div>
                         </li>
                     </ul>
@@ -399,15 +400,111 @@
 <script src="js/jquery.luara.0.0.1.min.js"></script>
 <script type="text/javascript" src="js/paginathing.js"></script>
 <script type="text/javascript">
-$(document).ready(function($){ 
-    $('.duibi').click(function () {
-        $(this).text('已加入对比栏');
-        $('.pop-compare').show();
+    var duibi_Num=0;
+    var duibi_Array=new Array();
+
+  $(document).ready(function($){
+      $('#del-items').click(function () {
+          $(".item-empty").each(function (index,value) {
+                  $(value).find("div").html("");
+                 // $(value).find("div").html("");
+                //  $(value).find("div").html("");
+          });
+          duibi_Num=0;
+          $('.duibi').text('加入对比栏');
+          $("#goto-contrast").css("background","");
+        //  alert("清除成功");
+      })
+      $('.hide-me').click(function () {
+          $('.pop-compare').hide();
+      });
+      $('.duibi').click(function(e) {
+          e.stopPropagation();
+          e.preventDefault();
+          $('.pop-compare').show();
+
+          if( duibi_Num==4)
+          {
+              alert("对比栏已满。");
+              return ;
+          }
+          if( $(this).text()=="已加入对比栏")
+          {
+              alert("该商品已加入对比栏。");
+              return ;
+          }
+          $(this).text('已加入对比栏');
+          var img=$(this).parent() .find("img").clone();
+          var price=$(this).parent() .find("p.price").clone();
+          var desc=$(this).parent() .find("p.desc").clone();
+           img.attr("class","little-picture");
+          price.attr("class","little-price red font14");
+          desc.attr("class","little-desc yihang c_33 font14 font100")
+          $(".item-empty").each(function (index,value) {
+              if($(value).find("div").find("p").length==0){
+                  console.log("true");
+                  $(value).find("div").append(img);
+                  $(value).find("div").append(desc);
+                  $(value).find("div").append(price);
+                  $(value).find("div").append(" <p class=\"del\">删除</p>");
+                  duibi_Num++;
+                  if(duibi_Num>=2){
+                        $("#goto-contrast").css("background","#FF0000");
+                  }
+                  return false;
+              }
+             // console.log(index);
+          })
+      })
+  });
+  $("#goto-contrast").click(function () {
+      if(duibi_Num>=2){
+          $(".item-empty").each(function (index,value) {
+              if(index>(duibi_Num-1)){
+                  return;
+              }
+              var temp=$(value).find("p.little-desc").attr("dnbh");
+              //console.log(jsonArry);
+              $.each(jsonArry,function (index1,data) {
+                  console.log(temp);
+                  console.log(data.dnbh);
+                  if(data.dnbh==temp)
+                  {
+                     // console.log("success");
+                      duibi_Array.push(data);
+                  }
+              })
+          });
+          localStorage["duibi"]=JSON.stringify(duibi_Array);
+          window.location.href = "compare.html"  ;
+          //localStorage["keys"]=data;
+      }
+     // console.log(duibi_Array);
+  })
+</script>
+<script type="text/javascript">
+    // 获取关键字
+    // var key=window.localStorage["keys"];
+    // var jsonArry=JSON.parse(window.localStorage[key]);
+    $.getJSON("js/dnht.json","",function(data){
+        console.log(data);
     });
-    $('.hide-me').click(function () {
-        $('.pop-compare').hide();
-    });
-});
+    //console.log(array);
+    // $.getJSON ("js/dnht.json","", function (data)  {
+    //     console.log(data);
+    // //使用方法
+    //     $(".normalPic").each(function (index,value) {
+    //         //console.log(index);
+    //         $(this).find("img").attr("src",[index].dntp);
+    //         $(value).find("p.price").text("￥"+jsonArry[index].dnjg);
+    //         $(this).find("p.desc").text(jsonArry[index].dnmc);
+    //         $(this).find("p.desc").attr("dnbh",jsonArry[index].dnbh);
+    //         $(this).find("p.review ").text("总销量:"+jsonArry[index].dnxl);
+    //         $(this).find("p.address ").text(jsonArry[index].dnly);
+    //         $(this).find("a").attr("href",jsonArry[index].dndz);
+    //     })
+    // })
+    
 </script>
 </body>
 </html>
