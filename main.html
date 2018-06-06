@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="css/main.css">
 <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
-<link rel="stylesheet" href="https://search.jd.com/Search?keyword=%E7%94%B5%E8%84%91&enc=utf-8&pvid=67b9d2822af74727991025cfc800cd3f">
 </head>
 <style>
     body {
@@ -18,25 +17,22 @@
         line-height: 90px;
         margin-left: 80px;
     }
-    .yiduibi {
-        display: block;
-    }
 </style>
 <body>
 <div class="width100" id="beforeLogin" style="height:25px;background:#f0f0f0;display: block;">
 	<div class="width1200 center_yh font14 c_66" style="height:25px;line-height:25px;">
     	<font class="left_yh">欢迎来到电脑海淘商城！</font>
-        <div class="right_yh" id="fast_jump">
+        <div class="right_yh" >
         	<a href="./login.html">登录</a>
             <b></b>
             <a href="./register.html">注册</a>
         </div>
     </div>
 </div>
-<div class="width100" id="afterLogin" style="height:25px;background:#f0f0f0;display: none;">
+<div class="width100" id="afterLogin" style="height:25px ;background:#f0f0f0;display: none;">
 	<div class="width1200 center_yh font14 c_66" style="height:25px;line-height:25px;">
     	<div class="left_yh" id="hello"></div>
-        <div class="right_yh">
+        <div class="right_yh" >
             <img src="/images/mrtx.png" style="width: 18px;height: 18px;line-height: 25px;"><a href="./my.html" style="margin-top: -20px;">个人中心</a>
         </div>
     </div>
@@ -47,13 +43,13 @@
         <div class="right_yh" style="height:28px;width:316px;border:2px solid #dd4545;margin-top:48px;">
         	<form>
                 <input type="text" placeholder="关键词查询" class="searCh" style="height: 25px;">
-                <input type="button" class="btnSearh" value="搜索" style="margin-top: -27px;">
+                <input type="button" class="btnSearh" value="搜索"  style="margin-top: -27px;">
             </form>
         </div>
     </div>
 </div>
 <!--导航条-->
-<div class="width100" style="height:45px;background:#dd4545;margin-top:px;position:relative;z-index:100;">
+<div class="width100" style="height:45px;background:#dd4545;position:relative;z-index:100;">
 	<!--中间的部分-->	
 	<div class="width1200 center_yh relative_yh" style="height:45px;">
     	<!--列表导航(downSlide就显示,否则就不显示)-->
@@ -68,10 +64,10 @@
                 	<font>台式机</font>
                     <img src="images/jt.png">
                     <div class="n2Nav">
-                    	<div class="n3Nav">
+                    	<div class="n3Nav"  id="tsj">
                             <h3>热门品牌</h3>
-                            <a href="#">联想</a>
-                            <a href="#">戴尔</a>
+                            <a href="#" name="台式" onclick="select(this)">联想</a>
+                            <a href="#"  name="台式" onclick="select(this)">戴尔</a>
                             <a href="#">惠普</a>
                             <a href="#">小米</a>
                             <a href="#">Apple</a>
@@ -99,11 +95,11 @@
                 <div class="n1Nav">
                         <font>笔记本</font>
                         <img src="images/jt.png">
-                        <div class="n2Nav">
+                        <div class="n2Nav" id="bjb">
                             <div class="n3Nav">
                                 <h3>热门品牌</h3>
-                                <a href="#">联想</a>
-                                <a href="#">戴尔</a>
+                                <a href="#" name="笔记本" onclick="select(this)">联想</a>
+                                <a href="#" name="笔记本" onclick="select(this)">戴尔</a>
                                 <a href="#">惠普</a>
                                 <a href="#">小米</a>
                                 <a href="#">Apple</a>
@@ -204,9 +200,9 @@
     <div class="right">
         <div class="right-title">
             <ul id="list">
-                <li style="background-color: #dd4545;color: #fff;">综合</li>
-                <li>销量↓</li>
-                <li>价格↓</li>
+                <li  id="dnbh" onclick="sort(id)" style="background-color: #dd4545;color: #fff;">综合</li>
+                <li id="dnxl" onclick="sort(id)">销量↓</li>
+                <li  id="dnjg" onclick="sort(id)">价格↓</li>
             </ul>
         </div>
         <div class="right-body">
@@ -693,7 +689,7 @@
                         </div>
                     </li>
                 </ul>
-		    </div>
+            </div>
         </div>
     </div>
 </div>
@@ -707,6 +703,9 @@
                     <li class="ui-switchable-item current">
                         <a href="javascript:;">对比栏</a>
                     </li>
+                    <!-- <li class="ui-switchable-item">
+                        <a href="javascript:;">最近浏览</a>
+                    </li> -->
                 </ul>
                 <div class="operate">
                     <a href="javascript:;" class="hide-me">隐藏</a>
@@ -717,47 +716,39 @@
                     <ul id="diff-items" class="diff-items clearfix">
                         <li class="item-empty">
                             <div style="width:206px;height:79px;">
-                                <a href="javascript:void(0);" style="width: 206px; height: 79px;">
-                                    <img class="little-picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg">
-                                    <p class="little-desc yihang c_33 font14 font100">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                    <p class="little-price red font14">￥2999.99</p>
-                                    <p class="del">删除</p>
-                                </a> 
+
                             </div>
                         </li>
                         <li class="item-empty">
                             <div style="width:206px;height:79px;">
-                                <a href="javascript:void(0);" style="width: 206px; height: 79px;">
-                                    <img class="little-picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg">
-                                    <p class="little-desc yihang c_33 font14 font100">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                    <p class="little-price red font14">￥2999.99</p>
-                                    <p class="del">删除</p>
-                                </a> 
+                                <!--<a href="javascript:void(0);" style="width: 206px; height: 79px;">-->
+                                    <!--<img class="litte-picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="80" height="80" style="float: left;">-->
+                                    <!--<p class="little-desc yihang c_33 font14 font100" style="width:100px;float: left;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>-->
+                                    <!--<p class="little-price red font14" style="width:60px;font-size:16px;float: left;">￥299.9</p>-->
+                                <!--</a>-->
                             </div>
                         </li>
                         <li class="item-empty">
                             <div style="width:206px;height:79px;">
-                                <a href="javascript:void(0);" style="width: 206px; height: 79px;">
-                                    <img class="little-picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg">
-                                    <p class="little-desc yihang c_33 font14 font100">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                    <p class="little-price red font14">￥2999.99</p>
-                                    <p class="del">删除</p>
-                                </a> 
+                                <!--<a href="javascript:void(0);" style="width: 206px; height: 79px;">-->
+                                    <!--<img class="litte-picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="80" height="80" style="float: left;">-->
+                                    <!--<p class="little-desc yihang c_33 font14 font100" style="width:100px;float: left;"></p>-->
+                                    <!--<p class="little-price red font14" style="width:60px;font-size:16px;float: left;"></p>-->
+                                <!--</a>-->
                             </div>
                         </li>
                         <li class="item-empty">
                             <div style="width:206px;height:79px;">
-                                <a href="javascript:void(0);" style="width: 206px; height: 79px;">
-                                    <img class="little-picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg">
-                                    <p class="little-desc yihang c_33 font14 font100">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>
-                                    <p class="little-price red font14">￥2999.99</p>
-                                    <p class="del">删除</p>
-                                </a> 
+                                <!--<a href="javascript:void(0);" style="width: 206px; height: 79px;">-->
+                                    <!--<img class="litte-picture" src="//img14.360buyimg.com/n7/jfs/t14425/176/473668046/339698/c39da645/5a2e3229N6eae4542.jpg" width="80" height="80" style="float: left;">-->
+                                    <!--<p class="little-desc yihang c_33 font14 font100" style="width:100px;float: left;">惠普(HP)薄锐ENVY 13-ad112TU 13.3英寸超薄笔记本</p>-->
+                                    <!--<p class="little-price red font14" style="width:60px;font-size:16px;float: left;">￥299.9</p>-->
+                                <!--</a>-->
                             </div>
                         </li>
                     </ul>
                     <div class="diff-operate">
-                        <a target="_blank" id="goto-contrast" href="./compare.html" class="btn-compare-b">对比</a>
+                        <a target="_blank" id="goto-contrast" href="javascript:void(0);" class="btn-compare-b">对比</a>
                         <a id="del-items">清空对比栏</a>
                     </div>
                 </div>
@@ -774,32 +765,165 @@
 	<div class="width1200 center_yh tcenter" style="margin-top:44px;">
         <p class="font16 c_33 tcenter" style="margin-top:46px;">www.diannaohaitao.com © CopyRight 电脑海淘 2018-2018 </p>
         <p class="font16 c_33 tcenter" style="margin-top:6px;">电话：000-0000000 手机：18022113311</p>
-        <p class="font16 c_33 tcenter" style="margin-top:6px;margin-bottom:10px;">赣ICP备:1666666号-1</p>
+        <p class="font16 c_33 tcenter" style="margin-top:6px;margin-bottom:10px;">鲁ICP备:1666666号-1</p>
     </div>
 </div>
 
-<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
-<script src="js/jquery.luara.0.0.1.min.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<!--<script src="js/jquery.luara.0.0.1.min.js"></script>-->
 <script type="text/javascript" src="js/paginathing.js"></script>
 <script type="text/javascript">
-$(document).ready(function($){
-    $("#list").on("click","li",function(){  
-        $("#list li").eq($(this).index()).attr("style","background:#dd4545;color:#fff;").siblings().removeAttr("style"); 
-    });
-    $('.list-group').paginathing({
-      perPage: 8,
-      limitPagination: 5,
-      containerClass: 'panel-footer',
-      pageNumbers: true
-    });  
-    $('.duibi').click(function () {
-        $(this).text('已加入对比栏');
-        $('.pop-compare').show();
-    });
-    $('.hide-me').click(function () {
-        $('.pop-compare').hide();
-    });
-});
+    var duibi_Num=0;
+    var duibi_Array=new Array();
+
+  $(document).ready(function($){
+      $("#list").on("click","li",function(){
+          $("#list li").eq($(this).index()).attr("style","background:#dd4545;color:#fff;").siblings().removeAttr("style");
+      });
+      $('.list-group').paginathing({
+          perPage: 8,
+          limitPagination: 5,
+          containerClass: 'panel-footer',
+          pageNumbers: true
+      });
+      $('#del-items').click(function () {
+          $(".item-empty").each(function (index,value) {
+                  $(value).find("div").html("");
+          });
+          duibi_Num=0;
+          $('.duibi').text('加入对比栏');
+          $("#goto-contrast").css("background","");
+        //  alert("清除成功");
+      })
+      $('.hide-me').click(function () {
+          $('.pop-compare').hide();
+      });
+      $('.duibi').click(function(e) {
+          e.stopPropagation();
+          e.preventDefault();
+          $('.pop-compare').show();
+
+          if( duibi_Num==4)
+          {
+              alert("对比栏已满。");
+              return ;
+          }
+          if( $(this).text()=="已加入对比栏")
+          {
+              alert("该商品已加入对比栏。");
+              return ;
+          }
+          $(this).text('已加入对比栏');
+          var img=$(this).parent() .find("img").clone();
+          var price=$(this).parent() .find("p.price").clone();
+          var desc=$(this).parent() .find("p.desc").clone();
+           img.attr("class","little-picture");
+          price.attr("class","little-price red font14");
+          desc.attr("class","little-desc yihang c_33 font14 font100")
+          $(".item-empty").each(function (index,value) {
+              if($(value).find("div").find("p").length==0){
+                  console.log("true");
+                  $(value).find("div").append(img);
+                  $(value).find("div").append(desc);
+                  $(value).find("div").append(price);
+                  $(value).find("div").append(" <p class=\"del\">删除</p>");
+                  duibi_Num++;
+                  if(duibi_Num>=2){
+                        $("#goto-contrast").css("background","#FF0000");
+                  }
+                  return false;
+              }
+             // console.log(index);
+          })
+      })
+  });
+  $("#goto-contrast").click(function () {
+      if(duibi_Num>=2){
+          $(".item-empty").each(function (index,value) {
+              if(index>(duibi_Num-1)){
+                  return;
+              }
+              var temp=$(value).find("p.little-desc").attr("dnbh");
+              //console.log(jsonArry);
+              $.each(jsonArry,function (index1,data) {
+                  console.log(temp);
+                  console.log(data.dnbh);
+                  if(data.dnbh==temp)
+                  {
+                     // console.log("success");
+                      duibi_Array.push(data);
+                  }
+              })
+          });
+          localStorage["duibi"]=JSON.stringify(duibi_Array);
+          window.location.href = "compare.html"  ;
+          //localStorage["keys"]=data;
+      }
+     // console.log(duibi_Array);
+  })
+</script>
+<script type="text/javascript">
+    // 获取关键字
+   var key=window.localStorage["keys"];
+   var jsonArry=JSON.parse(window.localStorage[key]);
+   console.log(jsonArry);
+    function compare(propertyName) {
+        return function(object1, object2) {
+            var value1 = object1[propertyName];
+            var value2 = object2[propertyName];
+            if(value2 < value1) {
+                return -1;
+            } else if(value2 > value1) {
+                return 1;
+            } else {
+                return 0;
+            }
+        }
+    }
+    //使用方法
+    function sort(ele) {
+        console.log(ele);
+        jsonArry.sort(compare(ele));
+        console.log(jsonArry);
+        update();
+    }
+    update();
+    function update(){
+        $(".normalPic").each(function (index,value) {
+            //console.log(index);
+
+            $(this).find("img").attr("src",jsonArry[index].dntp);
+            $(value).find("p.price").text("￥"+jsonArry[index].dnjg);
+            $(this).find("p.desc").text(jsonArry[index].dnmc);
+            $(this).find("p.desc").attr("dnbh",jsonArry[index].dnbh);
+            $(this).find("p.review ").text("总销量:"+jsonArry[index].dnxl);
+            $(this).find("p.address ").text(jsonArry[index].dnly);
+            $(this).find("a").attr("href",jsonArry[index].dndz);
+        })
+    }
+    function select(obj){
+            var type=obj.name;
+            var dnpp=obj.text;
+            console.log(type +":" +dnpp);
+        $.ajax({
+            url:"/dnht/com/SelectByType",
+            type:"post",
+            dataType : "json",
+            contentType : 'application/json',
+            data:JSON.stringify({dnpp: dnpp,type:type}),
+            success:function (result) {
+                console.log( JSON.stringify(result));
+                console.log(result);
+                jsonArry=result;
+                update();
+            },
+            error : function(XMLHttpRequest, textStatus, errorThrown) {
+                alert(XMLHttpRequest.status);
+                alert(XMLHttpRequest.readyState);
+                alert(textStatus);
+            },
+        });
+    }
 </script>
 </body>
 </html>
