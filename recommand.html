@@ -402,7 +402,6 @@
 <script type="text/javascript">
     var duibi_Num=0;
     var duibi_Array=new Array();
-
   $(document).ready(function($){
       $('#del-items').click(function () {
           $(".item-empty").each(function (index,value) {
@@ -486,25 +485,25 @@
     // 获取关键字
     // var key=window.localStorage["keys"];
     // var jsonArry=JSON.parse(window.localStorage[key]);
-    $.getJSON("js/dnht.json","",function(data){
+    $(function () {
+    $.ajax({
+      type: "GET",
+      dataType: "json",
+      url: "./js/dnht.json",
+      success: function (data) {
         console.log(data);
+        $(".normalPic").each(data, function (index,value) {
+            $(this).find("img").attr("src",data[index].dntp);
+            $(value).find("p.price").text("￥"+data[index].dnjg);
+            $(this).find("p.desc").text(data[index].dnmc);
+            $(this).find("p.desc").attr("dnbh",data[index].dnbh);
+            $(this).find("p.review ").text("总销量:"+data[index].dnxl);
+            $(this).find("p.address ").text(data[index].dnly);
+            $(this).find("a").attr("href",data[index].dndz);
+        })
+      }
     });
-    //console.log(array);
-    // $.getJSON ("js/dnht.json","", function (data)  {
-    //     console.log(data);
-    // //使用方法
-    //     $(".normalPic").each(function (index,value) {
-    //         //console.log(index);
-    //         $(this).find("img").attr("src",[index].dntp);
-    //         $(value).find("p.price").text("￥"+jsonArry[index].dnjg);
-    //         $(this).find("p.desc").text(jsonArry[index].dnmc);
-    //         $(this).find("p.desc").attr("dnbh",jsonArry[index].dnbh);
-    //         $(this).find("p.review ").text("总销量:"+jsonArry[index].dnxl);
-    //         $(this).find("p.address ").text(jsonArry[index].dnly);
-    //         $(this).find("a").attr("href",jsonArry[index].dndz);
-    //     })
-    // })
-    
+});
 </script>
 </body>
 </html>
