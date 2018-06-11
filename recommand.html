@@ -485,25 +485,13 @@
     // 获取关键字
     // var key=window.localStorage["keys"];
     // var jsonArry=JSON.parse(window.localStorage[key]);
-    $(function () {
-    $.ajax({
-      type: "GET",
-      dataType: "json",
-      url: "./js/dnht.json",
-      success: function (data) {
-        console.log(data);
-        $(".normalPic").each(data, function (index,value) {
-            $(this).find("img").attr("src",data[index].dntp);
-            $(value).find("p.price").text("￥"+data[index].dnjg);
-            $(this).find("p.desc").text(data[index].dnmc);
-            $(this).find("p.desc").attr("dnbh",data[index].dnbh);
-            $(this).find("p.review ").text("总销量:"+data[index].dnxl);
-            $(this).find("p.address ").text(data[index].dnly);
-            $(this).find("a").attr("href",data[index].dndz);
-        })
-      }
-    });
-});
+    // $(function () {
+        console.log("dfass");
+        $.getJSON("js/dnht.json", function (data){
+            console.log("dfassqqq");
+            console.log(data);
+        });
+// });
 </script>
 </body>
 </html>
