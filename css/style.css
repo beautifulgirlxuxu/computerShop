@@ -1,4 +1,4 @@
-*{margin:0;padding:0;list-style:none;text-decoration:none;font-family:"黑体";}
+*{margin:0;padding:0;list-style:none;text-decoration:none;font-family:"楷体"!important;font-style: normal;-webkit-font-smoothing:antialiased;}
 body a:link{text-decoration:none;}
 body a:hover{text-decoration:none;}
 body a:active{text-decoration:none;}
