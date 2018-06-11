@@ -693,7 +693,6 @@
         </div>
     </div>
 </div>
-<!-- 对比栏 -->
 <div id="pop-compare" data-load="true" class="pop-compare pop-compare-narrow" style="overflow: visible; bottom: 0px; display: none;">
     <div class="pop-wrap" style="left: 0px;">
         <p class="pop-compare-tips" style="display: none;">对比栏已满，您可以删除不需要的栏内商品再继续添加哦！</p>
@@ -789,15 +788,20 @@
       $('#del-items').click(function () {
           $(".item-empty").each(function (index,value) {
                   $(value).find("div").html("");
+                 // $(value).find("div").html("");
+                //  $(value).find("div").html("");
           });
           duibi_Num=0;
           $('.duibi').text('加入对比栏');
           $("#goto-contrast").css("background","");
         //  alert("清除成功");
       })
+
       $('.hide-me').click(function () {
           $('.pop-compare').hide();
       });
+
+
       $('.duibi').click(function(e) {
           e.stopPropagation();
           e.preventDefault();
@@ -814,30 +818,46 @@
               return ;
           }
           $(this).text('已加入对比栏');
-          var img=$(this).parent() .find("img").clone();
-          var price=$(this).parent() .find("p.price").clone();
-          var desc=$(this).parent() .find("p.desc").clone();
+          var data_index=$(this).parent().parent().attr("data-index");
+        //   console.log(data_index);
+          var img=$(this).parent().find("img").clone();
+          var price=$(this).parent().find("p.price").clone();
+          var desc=$(this).parent().find("p.desc").clone();
            img.attr("class","little-picture");
           price.attr("class","little-price red font14");
           desc.attr("class","little-desc yihang c_33 font14 font100")
           $(".item-empty").each(function (index,value) {
               if($(value).find("div").find("p").length==0){
-                  console.log("true");
+                  $(value).find("div").attr("data-index",data_index);
+                //   console.log("true");
                   $(value).find("div").append(img);
                   $(value).find("div").append(desc);
                   $(value).find("div").append(price);
-                  $(value).find("div").append(" <p class=\"del\">删除</p>");
+                  $(value).find("div").append( '<p class="del">删除</p>');
                   duibi_Num++;
                   if(duibi_Num>=2){
                         $("#goto-contrast").css("background","#FF0000");
                   }
                   return false;
               }
-             // console.log(index);
-          })
+            // console.log(index);
+          });
+          $(".del").unbind().click(function() {
+            var activeIndex=$(this).parent().attr("data-index");
+            $(this).parent().empty();
+            //$('.duibi').text('加入对比栏');
+            $(".normalPic").each(function (index,value) {
+                // console.log($(value).attr("data-index"));
+                if($(value).attr("data-index") == activeIndex){
+                    $(value).children().children('.duibi').text('加入对比栏');
+                }
+            })
+            duibi_Num--;
+            })
       })
   });
   $("#goto-contrast").click(function () {
+      console.log(duibi_Num);
       if(duibi_Num>=2){
           $(".item-empty").each(function (index,value) {
               if(index>(duibi_Num-1)){
@@ -864,8 +884,9 @@
 </script>
 <script type="text/javascript">
     // 获取关键字
-   var key=window.localStorage["keys"];
-   var jsonArry=JSON.parse(window.localStorage[key]);
+    var jsonArry;
+   //var key=window.localStorage["keys"];
+   //var jsonArry=JSON.parse(window.localStorage[key]);
    console.log(jsonArry);
     function compare(propertyName) {
         return function(object1, object2) {
@@ -887,18 +908,30 @@
         console.log(jsonArry);
         update();
     }
+    // $.each(jsonArry,function (index,value) {
+    //    // console.log(value.dntp);
+    //     console.log(index);
+    //    $(".normalPic").eq(index).find("img").attr("src",value.dntp);
+    //     $(".normalPic").eq(index).find("p.price").text("￥"+value.dnjg);
+    //     $(".normalPic").eq(index).find("p.desc").text(value.dnmc);
+    //     $(".normalPic").eq(index).find("p.review ").text(value.dnxl);
+    //     $(".normalPic").eq(index).find("p.address ").text(value.dnly);
+    //    // console.log( $(".normalPic").eq(index).find("img").attr("src"));
+    //     //console.log($(".left_yh").text())
+    // })
     update();
     function update(){
         $(".normalPic").each(function (index,value) {
+            
             //console.log(index);
-
-            $(this).find("img").attr("src",jsonArry[index].dntp);
-            $(value).find("p.price").text("￥"+jsonArry[index].dnjg);
-            $(this).find("p.desc").text(jsonArry[index].dnmc);
-            $(this).find("p.desc").attr("dnbh",jsonArry[index].dnbh);
-            $(this).find("p.review ").text("总销量:"+jsonArry[index].dnxl);
-            $(this).find("p.address ").text(jsonArry[index].dnly);
-            $(this).find("a").attr("href",jsonArry[index].dndz);
+            $(this).attr("data-index",index);
+            // $(this).find("img").attr("src",jsonArry[index].dntp);
+            // $(value).find("p.price").text("￥"+jsonArry[index].dnjg);
+            // $(this).find("p.desc").text(jsonArry[index].dnmc);
+            // $(this).find("p.desc").attr("dnbh",jsonArry[index].dnbh);
+            // $(this).find("p.review ").text("总销量:"+jsonArry[index].dnxl);
+            // $(this).find("p.address ").text(jsonArry[index].dnly);
+            // $(this).find("a").attr("href",jsonArry[index].dndz);
         })
     }
     function select(obj){
@@ -924,6 +957,8 @@
             },
         });
     }
+
+
 </script>
 </body>
 </html>
